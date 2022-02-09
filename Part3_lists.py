@@ -1,18 +1,23 @@
 mylist = ['a','b','c','d','e']
 print(mylist[-1])
+print('single collen')
 print(mylist[:1])
 print(mylist[:3])
 
+print('double collen')
+print(mylist[::1])
+print(mylist[::3])
+
 print('before reassignment: ')
 print(mylist)
-mylist[0] = 'New Item'
+mylist[0] = 'New things'
 print('after reassignment: ')
 print(mylist)
 
-mylist.append('New things')
+mylist.append('New adventure')
 print(mylist)
 
-listtwo = ['f','g','h','i']
+listtwo = ['apple','banana']
 # mylist.append(listtwo)
 # print('append array: ')
 # print(mylist)
