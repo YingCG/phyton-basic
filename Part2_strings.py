@@ -3,7 +3,7 @@ print("  / |")
 print(" /  |")
 print("/___|")
 
-mystring = 'agadfau'
+mystring = 'abcdef'
 print(mystring[-1])
 print(mystring[3])
 
@@ -17,14 +17,17 @@ print(mystring[:3])
 print(mystring[2:5])
 
 # -- get everything : or :: --#
-print(mystring[::])
+hello = 'hello mashmarrow'
+print(hello[:])
+print(hello[::])
 
 # -- skip number : or :: --#
-print(mystring[::1]) #this get everything
-print(mystring[::2]) #skip after 1
+print(hello[::1]) #this get everything
+print(hello[::2]) #skip after 1
+print(hello[::3]) #skip after 2
 
 # build in method to string
-sentence = 'Hello you'
+sentence = input("What it the plan for tonight?")
 s = sentence.upper()
 print(s)
 
@@ -38,9 +41,9 @@ y = sentence.split('e')
 print(y)
 
 # print Formatting
-a = "Insert another string here: {} ".format("Insert me!")
+a = "Insert another string here: {} ".format(input("How are you feeling?"))
 print(a)
 # b = "Item one: {} Item Two: {}".format("dog","cat")
 # same below, but more dynamic as order doesn't matter anymore
-b = "Item one: {x} Item Two: {y}".format(x="dog",y="cat")
+b = "Activity: {x} Hobby: {y}".format(x=(input("what did you do during the weekend: ")),y=(input("your hobby: ")))
 print(b)
