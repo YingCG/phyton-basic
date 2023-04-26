@@ -28,12 +28,24 @@ else:
     print("last")
 
 # For Loops
+<<<<<<< HEAD
+=======
+seq = [1,2,3,5,6]
+for jelly in seq:
+    print(jelly)
+
+cafe ={"coffee":1, "bread":2, "muffin":3}
+>>>>>>> e2f4543eb65b0bebe5cb3cf920679ff83e75a3f7
 seq = [1, 2, 3, 4, 5, 6]
 
 for jelly in seq:
     print(jelly)
 
+<<<<<<< HEAD
 cafe = {"coffee": 1, "bread": 2, "muffin": 3}
+=======
+cafe ={"coffee": 1, "bread": 2, "muffin":3}
+>>>>>>> e2f4543eb65b0bebe5cb3cf920679ff83e75a3f7
 for item in cafe:
     print(item)
 
@@ -46,13 +58,21 @@ mypairs = [(1, 2), (3, 4), (5, 6)]
 for item in mypairs:
     print(item)
 
+<<<<<<< HEAD
 for item1, item2 in mypairs:
+=======
+for (item1, item2) in mypairs:
+>>>>>>> e2f4543eb65b0bebe5cb3cf920679ff83e75a3f7
     print(item1)
     print(item2)
 
 for tup1, tup2 in mypairs:
     print(tup2)
+<<<<<<< HEAD
     print(tup1)
+=======
+    print(tup1)   
+>>>>>>> e2f4543eb65b0bebe5cb3cf920679ff83e75a3f7
 
     # While Loops
     print("")
@@ -64,7 +84,11 @@ while i < 5:
     i = i + 1
 
 # range
+<<<<<<< HEAD
 numbers = list(range(0, 5))
+=======
+numbers = list(range(0,5))
+>>>>>>> e2f4543eb65b0bebe5cb3cf920679ff83e75a3f7
 print(numbers)
 
 for things in range(10):
