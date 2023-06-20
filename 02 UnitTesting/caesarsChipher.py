@@ -1,29 +1,14 @@
-import unittest
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-def encrypt(message):
-    encrypt_message = [idx for idx, char in enumerate(message)]
-    print(encrypt_message)
-    return message
 
-class TestEncryption(unittest.TestCase):
-    def setUp(self):
-        self.my_message = "banana"
-    # tests go here
-    def test_inputExists(self):
-        self.assertIsNone(self.my_message)
-    def test_inputType(self):
-        self.assertIsInstance(self.my_message, str)
-        
-    def test_functionRetrunsSomething(self):
-        self.assertIsNone(encrypt(self.my_message))
-        
-    def test_lenIO(self):
-        self.assertEqual(len(self.my_message), len(encrypt(self.my_message)))
-    def test_differntIO(self):
-        self.assertNotIn(self.my_message, encrypt(self.my_message))
-    
-if __name__ == "__main__":
-    unittest.main()
+#TODO-1: Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.
 
-# Use this instead if using jupyter notebook
-# unittest.main(argv=[''], verbosity=2, exit=False)
+def encrypt(text, shift):
+    userInput = text + shift
+    return userInput
+
+if __name__ == '__main__':
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
+    print(encrypt())
