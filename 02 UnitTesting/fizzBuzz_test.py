@@ -1,6 +1,6 @@
 # Can I call FizzBuzz
 import unittest
-
+import fizzbuzz
 # Get '1' when I pass in 1
 # Get '2' when I pass in 2
 # Get "Fizz" when I pass in 3
@@ -10,17 +10,13 @@ import unittest
 # Get "FizzBuzz" when I pass in 15 (a multiple of 3 and 5)
 
 
-def fizzBuzz(value):
-    return value
-
-
-class Testcase:
-    def test_canAssertTrue(self):
+class TestFizzBuzz:
+    def test_canCallFizzBuzz(self):
         # setup
         self.testValue = 1
 
         # action
-        result = fizzBuzz(self.testValue)
+        result = fizzbuzz(self.testValue)
         self.assertTrue(result)
 
 
