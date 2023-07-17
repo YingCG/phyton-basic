@@ -65,12 +65,10 @@ def startBlackJack():
         computerHand.append(card)
     drawMoreCard()
     calculateScore()
-
-        
+    
 def calculateScore():
     playerScore = 0
     computerScore = 0
-    winningScore = 21
             
     for i in playerHand:
         playerScore += i
@@ -81,33 +79,23 @@ def calculateScore():
     #     card = 11
     # if card == "J" or card == "Q" or card == "K":
     #     card = 10
-    def whoIsWinning():
-            # compare both player cards, and annouce who is the winner.
-        if playerScore == 21 and computerScore == 21:
-            print('Everybody Win')
-        elif playerScore == 21:
-            print('You Win')
-        elif computerScore == 21:
-            print('You lost')
-        elif playerScore > 21 and computerScore > 21:
-            print('Nobody win')
-        elif playerScore > 21 and  computerScore < 21:
-            print('You lost')
-        elif playerScore <= 21 and computerScore > 21:
-            print('You win')
-        elif playerScore > computerScore and playerScore <= 21:
-            print('You win')
-        elif playerScore == computerScore and playerScore < 22:
-            print('Everybody Win')
-        elif winningScore - playerScore < winningScore - computerScore:
-             print('You Win')
-        elif winningScore - playerScore > winningScore - computerScore:
-             print('You Lost')
-            
+
     # show both player cards
     print(f"You cards: {playerHand}, total: {playerScore}  |  Computer's Card: {computerHand}, total: {computerScore} ")
-    whoIsWinning()
-
+    
+    # compare both player cards, and annouce who is the winner.
+    if playerScore == 21 and computerScore == 21:
+        print('Everybody Win')
+    if playerScore == 21:
+        print('You Win')
+    if playerScore > 21 and computerScore > 21:
+        print('Nobody win')
+    if playerScore > 21 and not computerScore > 21:
+        print('You lost')
+    if playerScore <= 21 and not computerScore > 21:
+        print('You win')
+    if playerScore > computerScore and playerScore <= 21:
+        print('You win')
     
 
 # display playerCard after drawing the card

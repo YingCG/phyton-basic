@@ -66,11 +66,12 @@ def startBlackJack():
     drawMoreCard()
     calculateScore()
 
+
+
         
 def calculateScore():
     playerScore = 0
     computerScore = 0
-    winningScore = 21
             
     for i in playerHand:
         playerScore += i
@@ -91,18 +92,14 @@ def calculateScore():
             print('You lost')
         elif playerScore > 21 and computerScore > 21:
             print('Nobody win')
-        elif playerScore > 21 and  computerScore < 21:
+        elif playerScore > 21 and not computerScore > 21:
             print('You lost')
-        elif playerScore <= 21 and computerScore > 21:
+        elif playerScore <= 21 and not computerScore > 21:
             print('You win')
         elif playerScore > computerScore and playerScore <= 21:
             print('You win')
         elif playerScore == computerScore and playerScore < 22:
             print('Everybody Win')
-        elif winningScore - playerScore < winningScore - computerScore:
-             print('You Win')
-        elif winningScore - playerScore > winningScore - computerScore:
-             print('You Lost')
             
     # show both player cards
     print(f"You cards: {playerHand}, total: {playerScore}  |  Computer's Card: {computerHand}, total: {computerScore} ")

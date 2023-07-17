@@ -66,6 +66,8 @@ def startBlackJack():
     drawMoreCard()
     calculateScore()
 
+
+
         
 def calculateScore():
     playerScore = 0

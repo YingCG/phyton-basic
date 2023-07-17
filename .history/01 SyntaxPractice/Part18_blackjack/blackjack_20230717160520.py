@@ -40,13 +40,9 @@ def drawMoreCard():
     # if drawMoreCard  == 'y' and len(playerHand) < 6: 
         card = random.choice(cards)
         playerHand.append(card)
-        
-    # computer will draw card if the point is not exeed 17    
-    while sum(computerHand) < 17:
-        card = random.choice(cards)
-        computerHand.append(card)
+        calculateScore()
     else:
-       pass
+        calculateScore()
         
 # each player will have a ramdom drawing of card X two times
 def startBlackJack():
@@ -64,13 +60,11 @@ def startBlackJack():
         card = random.choice(cards)
         computerHand.append(card)
     drawMoreCard()
-    calculateScore()
 
-        
+    
 def calculateScore():
     playerScore = 0
     computerScore = 0
-    winningScore = 21
             
     for i in playerHand:
         playerScore += i
@@ -81,38 +75,17 @@ def calculateScore():
     #     card = 11
     # if card == "J" or card == "Q" or card == "K":
     #     card = 10
-    def whoIsWinning():
-            # compare both player cards, and annouce who is the winner.
-        if playerScore == 21 and computerScore == 21:
-            print('Everybody Win')
-        elif playerScore == 21:
-            print('You Win')
-        elif computerScore == 21:
-            print('You lost')
-        elif playerScore > 21 and computerScore > 21:
-            print('Nobody win')
-        elif playerScore > 21 and  computerScore < 21:
-            print('You lost')
-        elif playerScore <= 21 and computerScore > 21:
-            print('You win')
-        elif playerScore > computerScore and playerScore <= 21:
-            print('You win')
-        elif playerScore == computerScore and playerScore < 22:
-            print('Everybody Win')
-        elif winningScore - playerScore < winningScore - computerScore:
-             print('You Win')
-        elif winningScore - playerScore > winningScore - computerScore:
-             print('You Lost')
-            
-    # show both player cards
     print(f"You cards: {playerHand}, total: {playerScore}  |  Computer's Card: {computerHand}, total: {computerScore} ")
-    whoIsWinning()
-
-    
 
 # display playerCard after drawing the card
 startBlackJack()
 
 
 
+
+# computer will draw card if the point is not exeed 17
+
+# show both player cards
+
+# compare both player cards, and annouce who is the winner.
 

@@ -1,0 +1,3 @@
+def fizzBuzz(num):
+    return
+
