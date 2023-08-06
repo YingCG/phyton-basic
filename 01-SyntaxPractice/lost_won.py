@@ -7,4 +7,4 @@ playing_time = 2022
 winning_average = (won/total_games) *100
 without_result = total_games - won - lost
 without_result = won + lost
-print('You have been playing' + sport + 'for' + str(playing_time) + "time" + )
+print('You have been playing' + sport + 'for' + str(playing_time) + "time" )
