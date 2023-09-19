@@ -1,4 +1,4 @@
-﻿Station,Date(NZST),Pmsl(hPa),Pstn(hPa),tend,amt(hPa),a24(hPa)
+﻿                                          Station,Date(NZST),Pmsl(hPa),Pstn(hPa),tend,amt(hPa),a24(hPa)
 3925,20090101:0800,1007,983.6,-,-,-
 3925,20090102:0800,1012.3,988.5,-,-,-
 3925,20090103:0800,1009,985.5,-,-,-
